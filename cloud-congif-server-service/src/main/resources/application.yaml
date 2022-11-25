@@ -1,0 +1,13 @@
+
+spring :
+  application :
+    name : cloud-config-server-service
+    
+  cloud :
+    config :
+      server :
+        git :
+          uri : https://github.com/VedantAgrawal/environment-variable-repo.git
+
+server:
+  port: ${port:8888}
